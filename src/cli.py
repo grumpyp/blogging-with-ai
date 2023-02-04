@@ -56,7 +56,7 @@ def create_blogpost(topic: str, categories: List[str], tags: List[str], sticky: 
         console = GoogleSearchConsole(to_index_url=wordpress.get_all_posts()[0]['link'])
         console.send_index_request()
     if release is None:
-        release: datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S")  # type: ignore # noqa
+        release = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S")  # type: ignore # noqa
     db = Database()
     db.add(Post(title=ai_post.topic, content=blogpost_wordpress(ai_post.merged_html),
                 release=datetime.datetime.strptime(str(release), "%Y-%m-%dT%H:%M:%S"),
