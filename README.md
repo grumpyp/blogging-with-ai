@@ -94,17 +94,24 @@ Run `make test` to check if everything is working
 
 ## Commands
 
-to get an overview of commands use `python3 main.py -h`
+to get an overview of commands use `python3 cli.py --help`
 
 ```
-Usage: cli.py [OPTIONS]
+Usage: cli.py [OPTIONS] TOPIC
 
-  Simple program that greets NAME for a total of COUNT times.
+  Simple CLI tool that uses AI (GPT-3) to generate a WordPress blogpost from a
+  prompt.
 
 Options:
-  --count INTEGER  Number of greetings.
-  --name TEXT      The person to greet.
-  --help           Show this message and exit.
+  --release TEXT        Plan your release of the post e.g.
+                        "2022-12-30T00:00:00"
+  --categories INTEGER  List of categories
+  --tags INTEGER        List of tags
+  --sticky BOOLEAN      Sticky post
+  --search_console      Send post to search console
+  --picture TEXT        Search query for the picture at unsplash.com
+  --faq                 Add FAQ's with Schema-Markup to blogpost
+  --help                Show this message and exit.
 ```
 
 ## Example usage
