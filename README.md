@@ -1,5 +1,25 @@
 # AI-blogger
 
+## Table of contents
+
+1. Introduction to AI-blogger
+* Origin and objective of the project
+* Explanation of AI-blogger
+2. Setting up WordPress
+* Custom CSS
+* Installation of WordPress and necessary plugins
+* Editing the .htaccess file and wp-config.php 
+3. Setting up search console
+* Link to explanation
+4. Setting up AI-blogger
+* Filling the config.ini file
+* Testing the setup with make test 
+5. Available commands in AI-blogger 
+6. Example usage of AI-blogger
+7. How to contribute to the project
+
+---
+
 Using AI to create a self-sustained blog in seconds.
 
 See how it works here: https://youtu.be/TlKTIwGa-S4
@@ -141,3 +161,27 @@ want to fix. This way we can discuss the implementation details before you start
 
 Change the config.ini to your needs and play around with it. Feel free to change the `promots and templates` and
 show your results in case they are good.
+
+## Setup for non technical people 
+
+### Installing Python and Required Libraries:
+
+Download the latest version of Python from the official website (https://www.python.org/downloads/).
+Install Python by following the on-screen instructions.
+Open a Command Prompt or Terminal window.
+Navigate to the directory where you have the `requirements.txt` file of the project.
+Type the following command to install the required libraries: `pip install -r requirements.txt`
+Wait for the libraries to be installed.
+
+### Installing Docker or using the Script for your deployed WordPress system:
+
+Download the latest version of Docker from the official website (https://www.docker.com/products/docker-desktop).
+Install Docker by following the on-screen instructions.
+Open a Command Prompt or Terminal window.
+Navigate to the directory where you have the `docker-compose.yml` file of the project.
+Type the following command to install the required libraries: `docker-compose up -d`
+Wait for the libraries to be installed.
+
+* In case you want to use it with your production wordpress version, just change the config.ini 
+
+-> From there on follow the steps above (`.htaacess file plugins,..` and finally running the tool from your CLI)
